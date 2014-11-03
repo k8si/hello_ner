@@ -1,4 +1,4 @@
-FACTORIE NER Quickstart Guide
+    FACTORIE NER Quickstart Guide
 =========
 
 ## Training Models
@@ -13,7 +13,7 @@ The scripts I use to train models are in the `bin/` folder. In the past, I've al
 
 	Then copy/paste the path to the jar into `bin/train-conllchain-ner.sh` to set the `factoriejar` variable.
 
-3. Change other options as desired
+3. Change other options as desired (see e.g. `cc.factorie.app.nlp.ner.ChainNerOpts` for available options)
 
 4. Run
 

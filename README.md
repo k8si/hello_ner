@@ -1,4 +1,4 @@
-    FACTORIE NER Quickstart Guide
+FACTORIE NER Quickstart Guide
 =========
 
 ## Training Models
@@ -21,7 +21,7 @@ The scripts I use to train models are in the `bin/` folder. In the past, I've al
 
 Note #1: the lexicons use a significant amount of memory and you may have to modify your JVM heap size or something
 
-### Hyperparamter Optimization
+### Hyperparameter Optimization
 
 Repeat the above, except using `bin/optimize-conllchain-ner.sh`.
 

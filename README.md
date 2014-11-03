@@ -9,7 +9,7 @@ FACTORIE NER Quickstart Guide
 
 		mvn -Dmaven.test.skip=true package -Pnlp-jar-with-dependencies 
 
-Then copy/paste the path to the jar into `bin/train-conllchain-ner.sh` to set the `factoriejar` variable.
+	Then copy/paste the path to the jar into `bin/train-conllchain-ner.sh` to set the `factoriejar` variable.
 
 3. Change other options as desired
 

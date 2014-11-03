@@ -3,9 +3,13 @@ FACTORIE NER Quickstart Guide
 
 ## Training Models
 
-1. Generate your classpath using `mvn dependency:build-classpath` and copy/paste the output into `bin/train-conllchain-ner.sh` in the appropriate place (i.e. `CP`)
+1. Generate your classpath using `mvn dependency:build-classpath` and copy/paste the output into `bin/train-conllchain-ner.sh` in the appropriate place to set the `CP` variable.
 
-2. Clone FACTORIE, `cd` into the directory, and generate a jar using `mvn -Dmaven.test.skip=true package -Pnlp-jar-with-dependencies`. Then copy/paste the path to the jar into `bin/train-conllchain-ner.sh` (i.e. `factoriejar`)
+2. Clone FACTORIE, `cd` into the directory, and generate a jar using 
+
+		mvn -Dmaven.test.skip=true package -Pnlp-jar-with-dependencies 
+
+Then copy/paste the path to the jar into `bin/train-conllchain-ner.sh` to set the `factoriejar` variable.
 
 3. Change other options as desired
 
@@ -13,7 +17,7 @@ FACTORIE NER Quickstart Guide
 
 		$ ./bin/train-conllchain-ner.sh
 
-Note: the lexicons use a significant amount of memory and you may have to modify your JVM heap size or something.
+Note: the lexicons use a significant amount of memory and you may have to modify your JVM heap size or something
 
 ### Hyperparamter Optimization
 
@@ -29,7 +33,6 @@ CoNLL 2003 (on blake):
 Brown Clusters (on blake):
 * `/iesl/canvas/ksilvers/data/brownBllipClusters` (I copied this from A. Passos' folder)
 
-$ echo "Mr. Jones took a job at Google in New York.  He and his Australian wife moved from New South Wales on 4/1/12." | nc localhost 3228
 
 
 ## Processing Documents

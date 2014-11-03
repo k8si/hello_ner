@@ -3,6 +3,8 @@ FACTORIE NER Quickstart Guide
 
 ## Training Models
 
+The scripts I use to train models are in the `bin/` folder. In the past, I've also used [Maven launchers](http://scala-tools.org/mvnsites/maven-scala-plugin/usage_run.html).
+
 1. Generate your classpath using `mvn dependency:build-classpath` and copy/paste the output into `bin/train-conllchain-ner.sh` in the appropriate place to set the `CP` variable.
 
 2. Clone FACTORIE, `cd` into the directory, and generate a jar using 
@@ -17,7 +19,7 @@ FACTORIE NER Quickstart Guide
 
 		$ ./bin/train-conllchain-ner.sh
 
-Note: the lexicons use a significant amount of memory and you may have to modify your JVM heap size or something
+Note #1: the lexicons use a significant amount of memory and you may have to modify your JVM heap size or something
 
 ### Hyperparamter Optimization
 

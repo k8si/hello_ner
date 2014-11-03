@@ -4,7 +4,7 @@ import cc.factorie.app.nlp.{Document, DocumentAnnotator, Token}
 import cc.factorie.util.CmdOptions
 
 /**
- * Created by kate on 10/27/14.
+ * Note: You could probably just use cc.factorie.app.nlp.DocumentAnnotationPipeline instead...
  */
 
 trait Component extends DocumentAnnotator {
